@@ -1,0 +1,9 @@
+{
+	"name": "adf-migration-on-prem",
+	"location": "canadacentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "036f304b-5e78-4f8e-aa35-79d65c4235bf",
+		"tenantId": "1f87ebfc-6528-45d2-bf52-10a0cc67efb3"
+	}
+}
