@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-migration-on-prem"
+		},
+		"ls_MySql1_password": {
+			"value": ""
+		},
+		"ls_adls_copy_accountKey": {
+			"value": ""
+		},
+		"ls_MySql1_properties_typeProperties_server": {
+			"value": "localhost"
+		},
+		"ls_MySql1_properties_typeProperties_database": {
+			"value": "banking"
+		},
+		"ls_MySql1_properties_typeProperties_username": {
+			"value": "root"
+		},
+		"ls_adls_copy_properties_typeProperties_url": {
+			"value": "https://saibdp1storage.dfs.core.windows.net/"
+		}
+	}
+}
