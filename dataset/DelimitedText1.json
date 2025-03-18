@@ -15,7 +15,7 @@
 					"type": "Expression"
 				},
 				"folderPath": {
-					"value": "@concat(item().TABLE_NAME,' ')",
+					"value": "@concat(item().TABLE_NAME,'')",
 					"type": "Expression"
 				},
 				"fileSystem": "bronze"
