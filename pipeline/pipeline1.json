@@ -16,7 +16,8 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "MySqlSource"
+						"type": "MySqlSource",
+						"query": "SELECT TABLE_NAME\nFROM INFORMATION_SCHEMA.TABLES\nWHERE TABLE_SCHEMA = 'banking' AND TABLE_TYPE = 'BASE TABLE'"
 					},
 					"dataset": {
 						"referenceName": "MySqlTable1",
@@ -57,7 +58,8 @@
 							"userProperties": [],
 							"typeProperties": {
 								"source": {
-									"type": "MySqlSource"
+									"type": "MySqlSource",
+									"query": "@{concat('SELECT * FROM ', item().TABLE_NAME)}"
 								},
 								"sink": {
 									"type": "DelimitedTextSink",
